@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bgrwkq4nvvywu"]
+
+[ext_resource type="FontFile" uid="uid://86pkadm2i2dx" path="res://DigitalDisco.ttf" id="1_mwn6m"]
+[ext_resource type="Script" uid="uid://crq1ncem1vhy6" path="res://scripts/end.gd" id="2_3d26k"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4kxuq"]
+font = ExtResource("1_mwn6m")
+font_size = 96
+font_color = Color(0.42745098, 0.7411765, 0.08627451, 1)
+
+[node name="End" type="Control" unique_id=915634024]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -320.0
+offset_top = -180.0
+offset_right = -320.0
+offset_bottom = -180.0
+
+[node name="ReferenceRect" type="ReferenceRect" parent="." unique_id=1771525978]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 360.0
+
+[node name="Label" type="Label" parent="." unique_id=1050265656]
+layout_mode = 0
+offset_left = 245.0
+offset_top = 16.0
+offset_right = 395.0
+offset_bottom = 112.0
+text = "END"
+label_settings = SubResource("LabelSettings_4kxuq")
+horizontal_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+script = ExtResource("2_3d26k")
